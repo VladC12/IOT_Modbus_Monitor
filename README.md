@@ -1,6 +1,13 @@
 # IOT Project: Team9
 ### By Crehul Vlad, Farcasan Darius and Hornai Vlad
 
+## Requiered Python Libraries
+```
+pip install Flask
+pip install pymongo
+pip install json
+```
+
 ## Following is an example on how the graph might look after some usage
 ![Imgur](https://i.imgur.com/7rIDZBw.jpg)
 
