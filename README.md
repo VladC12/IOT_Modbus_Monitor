@@ -1,7 +1,7 @@
 # IOT Project: Team9
 ### By Crehul Vlad, Farcasan Darius and Hornai Vlad
 
-## Requiered Python Libraries
+## Required Python Libraries
 ```
 pip install Flask
 pip install pymongo
@@ -11,7 +11,7 @@ pip install json
 ## Following is an example on how the graph might look after some usage
 ![Imgur](https://i.imgur.com/7rIDZBw.jpg)
 
-## Recieved/Input Data
+## Received/Input Data
 ### The `modbus_gw.ini` will have to be of this format:
 ```
 [INPUT_REGISTERS]
@@ -61,7 +61,7 @@ CHANNEL = 2, 129, 8, 0, 0, 'float', 'Reserved', 'Manufacturer Specific', 0
 
 ## Data Parsing
 - We had to parse the data from `modbus_gw.in` and `Monitor_Host_Publisher.conf`
-- Those will be saved after fetching new data into `\static\Modbus_Gw_File_Parsed.json`, respectivly `\static\Monitor_Host_Publisher_Parsed.json`
+- Those will be saved after fetching new data into `\static\Modbus_Gw_File_Parsed.json`, respectively `\static\Monitor_Host_Publisher_Parsed.json`
 - The parsing is done by `Modbus_Gw_Parsed.py` and `Monitor_Host_Parsed.py`
 
 Alongside the `conf` and `ini` file we had to parse the data coming from the modbus server.
@@ -76,7 +76,7 @@ Alongside the `conf` and `ini` file we had to parse the data coming from the mod
 - The python scripts will be called by `backend.py` which is a web framework known as Flask. This will handle the webpage rendering and using the python programs.
 
 ## Frontend/Interface/Graph
-- The data will be dispalyed on a web application
+- The data will be displayed on a web application
 - The interface is handled by `\templates\Publisher_Display.html` This includes the HTML and JavaScript part. Also of note part of the styling is in `\static\css\chart.css`
 - The page is rendered by the backend as mentioned above.
 ## This is a complete overview of the result
